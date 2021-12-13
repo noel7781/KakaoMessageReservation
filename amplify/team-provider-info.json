@@ -1,0 +1,27 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kakaomsgreservation-dev-210533-authRole",
+      "UnauthRoleArn": "arn:aws:iam::605748406258:role/amplify-kakaomsgreservation-dev-210533-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::605748406258:role/amplify-kakaomsgreservation-dev-210533-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-kakaomsgreservation-dev-210533-deployment",
+      "UnauthRoleName": "amplify-kakaomsgreservation-dev-210533-unauthRole",
+      "StackName": "amplify-kakaomsgreservation-dev-210533",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:605748406258:stack/amplify-kakaomsgreservation-dev-210533/fcbdb310-5755-11ec-acab-0a90b90a65f8",
+      "AmplifyAppId": "d4dueqty43e2y"
+    },
+    "categories": {
+      "function": {
+        "kakaoMsgSenderLambda": {
+          "deploymentBucketName": "amplify-kakaomsgreservation-dev-210533-deployment",
+          "s3Key": "amplify-builds/kakaoMsgSenderLambda-4b366f4d6b45596c315a-build.zip"
+        },
+        "kakaoTokenRefreshLambda": {
+          "deploymentBucketName": "amplify-kakaomsgreservation-dev-210533-deployment",
+          "s3Key": "amplify-builds/kakaoTokenRefreshLambda-72635a4f303863743557-build.zip"
+        }
+      }
+    }
+  }
+}

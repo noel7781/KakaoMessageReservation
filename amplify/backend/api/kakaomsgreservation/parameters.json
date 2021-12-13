@@ -1,0 +1,5 @@
+{
+  "AppSyncApiName": "kakaomsgreservation",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
+}
