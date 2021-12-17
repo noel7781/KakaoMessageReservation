@@ -24,6 +24,7 @@ let MsgForm = ({
             sx={{ width: 1000, backgroundColor: "white" }}
             required
             id="outlined-required"
+            placeholder="메시지 입력창"
             // value="메세지 입력창"
             // value={text}
             // onChange={onChangeText}
@@ -43,7 +44,7 @@ let MsgForm = ({
           />
           <AirDatePickerCalendar
             timepicker={true}
-            minutesStep={5}
+            minutesStep={1}
             locale={localeKr}
             onSelect={onSelect}
           />

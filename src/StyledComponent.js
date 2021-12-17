@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const BackImage = styled.div`
+  flex: 1;
   position: fixed;
   top: 0;
   left: 0;

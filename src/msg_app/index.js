@@ -30,7 +30,7 @@ const JAVASCRIPT_KEY = "575e443e9c044c2c57b93ab72dc2dc3a";
 
 const REST_KEY = "44601939644a29fa75e93f83cecb76d5";
 
-const REDIRECT_URI = "http://localhost:3000/index.html";
+const REDIRECT_URI = "https://main.d4dueqty43e2y.amplifyapp.com/index.html";
 
 class MsgApp extends Component {
   constructor() {
@@ -385,7 +385,7 @@ class MsgApp extends Component {
     let formatted_time = moment(e.date).format("YYYY-MM-DD hh:mm:ss");
     this.setState({ timeData: formatted_time });
   };
-
+  /*
   handleCheckbox = (e) => {
     let { friend_lists } = this.state;
     let nextFriends = friend_lists.map((item, index) => {
@@ -395,6 +395,26 @@ class MsgApp extends Component {
       return item;
     });
 
+    this.setState({ friend_lists: nextFriends });
+  };
+*/
+  handleCheckbox = (e) => {
+    let { friend_lists, keyword } = this.state;
+    let nextFriendLists = friend_lists.filter((friend) => {
+      return friend.profile_nickname.indexOf(keyword) > -1;
+    });
+    let checked_id = [];
+    nextFriendLists.map((item, index) => {
+      if (index === Number(e.target.value)) {
+        checked_id.push(item.id);
+      }
+    });
+    let nextFriends = friend_lists.map((item, index) => {
+      if (checked_id.includes(item.id)) {
+        item.checked = !item.checked;
+      }
+      return item;
+    });
     this.setState({ friend_lists: nextFriends });
   };
 
@@ -566,7 +586,7 @@ class MsgApp extends Component {
           <BackImage>
             <Stack
               sx={{
-                marginTop: "400px",
+                marginTop: "50px",
               }}
               display="flex"
               justifyContent="center"
