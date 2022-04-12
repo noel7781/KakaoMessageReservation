@@ -1,0 +1,17 @@
+type User @model  @auth(rules: [{ allow: public }]) {
+  userID: ID! @primaryKey
+  name: String!
+  accessToken: String!
+  refreshToken: String!
+  msgs: [Msg] @hasMany
+}
+
+type Msg @model  @auth(rules: [{ allow: public }]) {
+  msgID: ID! @primaryKey
+  recvId: String!
+  recvName: String!
+  sendId: User @belongsTo
+  content: String!
+  reserveTime: String!
+  success: Boolean!
+}

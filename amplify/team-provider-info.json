@@ -15,11 +15,11 @@
       "function": {
         "kakaoMsgSenderLambda": {
           "deploymentBucketName": "amplify-kakaomsgreservation-dev-210533-deployment",
-          "s3Key": "amplify-builds/kakaoMsgSenderLambda-4b366f4d6b45596c315a-build.zip"
+          "s3Key": "amplify-builds/kakaoMsgSenderLambda-37646c30375650762b78-build.zip"
         },
         "kakaoTokenRefreshLambda": {
           "deploymentBucketName": "amplify-kakaomsgreservation-dev-210533-deployment",
-          "s3Key": "amplify-builds/kakaoTokenRefreshLambda-72635a4f303863743557-build.zip"
+          "s3Key": "amplify-builds/kakaoTokenRefreshLambda-2b4173644b6c67645151-build.zip"
         }
       }
     }
